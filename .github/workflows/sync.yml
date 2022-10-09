@@ -1,0 +1,76 @@
+name: Sync Others
+
+on:
+  repository_dispatch:
+    types:
+      - build
+jobs:
+  repo-sync:
+    name: Sync Others
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.5.0
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: GetRemoteFiles
+      run: |
+          source ./.github/func.sh
+          getRemoteFile "https://github.com/freefq/free" master "v2" base64
+          
+          python ./.github/sub.py
+    - name: ConvertUrlToClash
+      run: |
+          source ./.github/func.sh
+          
+          urlFiles=(`ls base64*`)
+          for urlFile in "${urlFiles[@]}"; do
+            echo $urlFile
+            cat $urlFile | base64 -d > url_$urlFile
+            rm $urlFile
+          done
+          
+          docker run -d -p 2550:25500 tindy2013/subconverter:latest
+          docker ps
+          sleep 5
+          urlFiles=(`ls url*`)
+          for urlFile in "${urlFiles[@]}"; do
+            echo $urlFile
+            curl -v -o ready_$urlFile "http://0.0.0.0:2550/sub?target=clash&url=$(urlEncode $urlFile)" || true
+            rm $urlFile
+          done
+    - name: MergeReadyFiles
+      run: |
+          source ./.github/func.sh
+          
+          echo "proxies:" > clash_auto 
+          readyFiles=(`ls ready*`)
+          for readyFile in "${readyFiles[@]}"; do
+            echo $readyFile
+            moveProxiesToSync $readyFile clash_auto
+          done
+          
+          rm -rf ready*
+    - name: Add files
+      id: gitStatus   
+      run: |
+          git add clash_auto
+          gitStatus="$(git status -s)"
+          echo "hadChanged=${#gitStatus}" >> $GITHUB_OUTPUT
+    - name: Commit files
+      if: ${{ steps.gitStatus.outputs.hadChanged != 0 }}
+      run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -am "bot: update proxies" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
