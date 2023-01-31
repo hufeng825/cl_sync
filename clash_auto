@@ -1,16 +1,15 @@
 proxies:
 - {name: 美国 惠普HP, server: hk01.wxfz.ml, port: 32825, type: vmess, uuid: 4cd69f52-4441-44eb-d4f4-faa977d6d477, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 美国 CloudFlare节点, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-- {name: 美国 RF Engineering, server: 141.193.213.20, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/fdfadsfa/63848bfe228fd/, headers: {Host: us-lb.sshkit.org}}, udp: true}
-- {name: 美国 马里兰州罗耀拉大学, server: trld.ballistics.top, port: 443, type: trojan, password: 0c355515-b1e5-4c0a-b843-e1defbe7c0fa, skip-cert-verify: true, udp: true}
-- {name: 澳大利亚 V2CROSS.COM, server: 140.83.86.129, port: 80, type: vmess, uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-- {name: 美国 加利福尼亚州费利蒙Linode数据中心, server: us2.555199.xyz, port: 443, type: trojan, password: 9442ea5a-0c72-4f16-a591-9bec0d2ace7c, skip-cert-verify: true, udp: true}
-- {name: 剩余流量：2 GB, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: cdc1213b-fe90-4745-bb9b-85508fa0b5b2, udp: true}
-- {name: 套餐到期：2023-02-01, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: cdc1213b-fe90-4745-bb9b-85508fa0b5b2, udp: true}
-- {name: 官网：tblack.xyz, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: cdc1213b-fe90-4745-bb9b-85508fa0b5b2, udp: true}
-- {name: 邀请返佣：40%【循环返佣】, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: cdc1213b-fe90-4745-bb9b-85508fa0b5b2, udp: true}
-- {name: 香港体验, server: 120.240.45.167, port: 18322, type: ss, cipher: chacha20-ietf-poly1305, password: cdc1213b-fe90-4745-bb9b-85508fa0b5b2, udp: true}
-- {name: 新加坡体验, server: shct8c16g.xfltd.top, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: cdc1213b-fe90-4745-bb9b-85508fa0b5b2, udp: true}
+- {name: 美国 RF Engineering, server: news.microsoft.com, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+- {name: 美国 CloudFlare节点, server: 172.67.222.46, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-lb.sshkit.org}}, udp: true}
+- {name: 美国 CloudFlare节点 2, server: 190.93.246.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: lg1.trump2023.us, network: ws, ws-opts: {path: /, headers: {Host: lg1.trump2023.us}}, udp: true}
+- {name: 美国 V2CROSS.COM, server: zzjp01.fuqiangren.com, port: 20220, type: trojan, password: b57f94c6-7385-47f7-9c8a-55de6098bd2b, skip-cert-verify: true, udp: true}
+- {name: 剩余流量：2 GB, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 4000f010-30ba-409e-b495-e4ce6bfb8ae6, udp: true}
+- {name: 套餐到期：2023-02-01, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 4000f010-30ba-409e-b495-e4ce6bfb8ae6, udp: true}
+- {name: 官网：tblack.xyz, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 4000f010-30ba-409e-b495-e4ce6bfb8ae6, udp: true}
+- {name: 邀请返佣：40%【循环返佣】, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 4000f010-30ba-409e-b495-e4ce6bfb8ae6, udp: true}
+- {name: 香港体验, server: 120.240.45.167, port: 18322, type: ss, cipher: chacha20-ietf-poly1305, password: 4000f010-30ba-409e-b495-e4ce6bfb8ae6, udp: true}
+- {name: 新加坡体验, server: shct8c16g.xfltd.top, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: 4000f010-30ba-409e-b495-e4ce6bfb8ae6, udp: true}
 - {name: github.com/freefq - 香港电讯盈科有限公司 1, server: 58.153.104.102, port: 18001, type: vmess, uuid: 26fe3b2c-1005-362b-9700-426961cbd50b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 美国惠普HP 2, server: hk01.wxfz.ml, port: 32825, type: vmess, uuid: 4cd69f52-4441-44eb-d4f4-faa977d6d477, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 希腊 3, server: 144.24.72.125, port: 39867, type: vmess, uuid: 1c1d94dc-e79b-4a24-dc9f-7afa92539a80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
