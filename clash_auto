@@ -4,12 +4,12 @@ proxies:
 - {name: 美国 V2CROSS.COM, server: trxn.ballistics.top, port: 443, type: trojan, password: 0c355515-b1e5-4c0a-b843-e1defbe7c0fa, skip-cert-verify: true, udp: true}
 - {name: 美国 RF Engineering, server: 141.193.213.20, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/fdfadsfa/63848bfe228fd/, headers: {Host: us-lb.sshkit.org}}, udp: true}
 - {name: 美国 CloudFlare节点 2, server: cf.515188.xyz, port: 80, type: vmess, uuid: 0b5e92df-5a8d-49ba-990d-4ae0c8fcf7cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 3woi.weigogogo.tk}}, udp: true}
-- {name: 剩余流量：2 GB, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 3cdaa0cb-f7d0-46e8-a9b3-d93b778754d0, udp: true}
-- {name: 套餐到期：2023-01-31, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 3cdaa0cb-f7d0-46e8-a9b3-d93b778754d0, udp: true}
-- {name: 官网：tblack.xyz, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 3cdaa0cb-f7d0-46e8-a9b3-d93b778754d0, udp: true}
-- {name: 邀请返佣：40%【循环返佣】, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 3cdaa0cb-f7d0-46e8-a9b3-d93b778754d0, udp: true}
-- {name: 香港体验, server: 120.240.45.167, port: 18322, type: ss, cipher: chacha20-ietf-poly1305, password: 3cdaa0cb-f7d0-46e8-a9b3-d93b778754d0, udp: true}
-- {name: 新加坡体验, server: shct8c16g.xfltd.top, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: 3cdaa0cb-f7d0-46e8-a9b3-d93b778754d0, udp: true}
+- {name: 剩余流量：2 GB, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 1bb481f5-a1ae-4289-9ac4-385df9b1febe, udp: true}
+- {name: 套餐到期：2023-01-31, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 1bb481f5-a1ae-4289-9ac4-385df9b1febe, udp: true}
+- {name: 官网：tblack.xyz, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 1bb481f5-a1ae-4289-9ac4-385df9b1febe, udp: true}
+- {name: 邀请返佣：40%【循环返佣】, server: 01.123445566.xyz, port: 18321, type: ss, cipher: chacha20-ietf-poly1305, password: 1bb481f5-a1ae-4289-9ac4-385df9b1febe, udp: true}
+- {name: 香港体验, server: 120.240.45.167, port: 18322, type: ss, cipher: chacha20-ietf-poly1305, password: 1bb481f5-a1ae-4289-9ac4-385df9b1febe, udp: true}
+- {name: 新加坡体验, server: shct8c16g.xfltd.top, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: 1bb481f5-a1ae-4289-9ac4-385df9b1febe, udp: true}
 - {name: github.com/freefq - 日本 1, server: n1671127302.aqdisrv.cn, port: 443, type: vmess, uuid: 889f5943-b2dc-4aeb-8a1e-e63e15ce5f5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: n1671127302.aqdisrv.cn, network: ws, ws-opts: {path: /5l66s0pR, headers: {Host: n1671127302.aqdisrv.cn}}, udp: true}
 - {name: github.com/freefq - 美国Amazon EC2服务器 2, server: 3.38.190.4, port: 42996, type: vmess, uuid: 8b3daaee-f4a9-4579-e26a-72a0f64cd3ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - {name: github.com/freefq - 日本 3, server: iplc-hk.19991314.xyz, port: 26166, type: vmess, uuid: f7072da5-78a8-475d-821f-dd9feb3be555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: iplc-hk.19991314.xyz, udp: true}
