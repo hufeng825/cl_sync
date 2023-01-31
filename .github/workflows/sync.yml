@@ -23,6 +23,7 @@ jobs:
       run: |
           source ./.github/func.sh
           getRemoteFile "https://github.com/freefq/free" master "v2" base64
+          getRemoteFile "https://github.com/Pawdroid/Free-servers" main "sub" base64
           
           python ./.github/sub.py
     - name: ConvertUrlToClash
