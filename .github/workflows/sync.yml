@@ -28,6 +28,8 @@ jobs:
           export home_urls=$(cat <<- EOF
           https://user.bafang.vip
           https://cloud.hhygj.xyz
+          https://xingbayun.top
+          https://v2board.co
           EOF
           )
           python ./.github/sub.py
