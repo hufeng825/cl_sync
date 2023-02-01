@@ -1,19 +1,18 @@
 import requests
-import random, string
+import random, string, os
 import datetime
 from time import sleep
 
 V2B_REG_REL_URL = '/api/v1/passport/auth/register'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
 
-home_urls = (
-    'https://user.bafang.vip',
-    'https://cloud.hhygj.xyz'
-)
-times = 2
+home_urls = str.split(os.getenv('home_urls'), "\n")
+times = 1
 
 subs = []
 for current_url in home_urls:
+    print(current_url)
+    current_url = current_url.strip()
     i = 0
     while i < times:
         form_data = {
@@ -44,8 +43,7 @@ for current_url in home_urls:
         else:
             print(f'Number succeeded: {i}\t{subscription_url}')
             break
-
-print(f'{times} accounts created for each site. Subscription URLs:\n----------')
+            
 print(*subs, sep='\n')
 
 ind = 0
